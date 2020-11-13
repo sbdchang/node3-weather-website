@@ -6,6 +6,7 @@ const geocode = require("./Utils/geocode");
 const forecast = require("./Utils/forecast");
 
 const app = express();
+const port = process.env.PORT || 3000
 
 //define paths for Express configuration
 //__dirname is the folder directory this file currently lives in. Below 2 lines concatenate deeper folders to create new paths
@@ -128,6 +129,6 @@ app.get("*", (req, res) => {
 });
 
 //first param is port, second param is a callback function
-app.listen(3000, () => {
-    console.log("Server is up on port 3000");
+app.listen(port, () => {
+    console.log("Server is up on port " + port);
 });
