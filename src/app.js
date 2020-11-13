@@ -58,7 +58,7 @@ app.get("/about", (req, res) => {
 app.get("/help", (req, res) => {
     res.render("help", {
         title: "Help",
-        message: "This is the help page. ",
+        message: "This is the help page ",
         name: "Steven Chang"
     });
 });
