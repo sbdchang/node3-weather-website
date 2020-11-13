@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title> Help </title>
+        <link rel = "icon" href = "/IMG/weather.png">
+        <link rel = "stylesheet" href = "./CSS/Styles.css">
+    </head>
+
+    <body>
+        <div class = "main-content">
+            {{!-- > character denotes loading a partials. Then just include the partials file name --}}
+            {{>header}} 
+
+            <p> {{message}} </p>
+        </div>
+        
+        {{>footer}}
+    </body>
+
+</html>

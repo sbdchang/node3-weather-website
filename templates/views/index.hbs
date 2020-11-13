@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title> Weather </title>
+        <link rel = "icon" href = "/IMG/weather.png">
+        <link rel = "stylesheet" href = "./CSS/Styles.css">       
+    </head>
+
+    <body>
+        <div class = "main-content">
+            {{!-- > character denotes loading a partials. Then just include the partials file name --}}
+            {{>header}}
+
+            <p> Use this site to get your weather! </p>
+
+            <form> 
+                <input placeholder = "Location">
+                <button> Search </button>
+            </form>
+
+            <p id = "message-1">  </p>
+            <p id = "message-2">  </p>
+        </div>
+
+        
+        
+        {{>footer}}
+
+        <script src = "./JS/App.js"></script>
+    </body>
+
+</html>
